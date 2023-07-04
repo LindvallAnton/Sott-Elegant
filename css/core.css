@@ -18,6 +18,11 @@ h2 {
     font-size: 22px;
 }
 
+img {
+    max-width:100%;
+    height:auto;
+}
+
 .menu {
   float: left;
   width: 20%;

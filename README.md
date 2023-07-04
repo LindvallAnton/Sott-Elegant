@@ -1,0 +1,2 @@
+# Sott-Elegant
+School project

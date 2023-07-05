@@ -1,60 +1,24 @@
 * {
   box-sizing: border-box;
+  background-color: #FDF9ED;
   color: black;
   font-family: Courier, monospace;
   font-size: 16px;
 }
 
-.top {
-    background-color:#365059e5;
-    padding:15px;
-    text-align:center;
-}
-
 h1 {
-    font-size: 40px;
-    font-family: Times, serif;
-    color: white;
+  font-size: 40px;
+  font-family: Times, serif;    
 }
 
 h2 {
-    font-size: 24px;
-    font-family: Times, serif;
+  font-size: 24px;
+  font-family: Times, serif;
 }
 
 img {
-    max-width:100%;
-    height:auto;
-}
-
-.menu {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.menu a {
-  background-color: #C9D9DE;
-  padding: 15px;
-  margin-top: 7px;
-  display: block;
-  width: 100%;
-  color: black;
-}
-
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-}
-
-.right {
-  background-color: #C9D9DE;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
+  max-width:100%;
+  height:auto;
 }
 
 /*Storleksanpassning för mobiler*/
@@ -64,7 +28,71 @@ img {
   }
 }
 
-/*Sidans footer*/
+/*---------- Sidans top ----------*/
+.top {
+    background-color:#365059;
+    padding:15px;
+    text-align:center;
+}
+
+.top h1 {
+  background-color: #365059;
+  color: white;
+}
+
+/*---------- Sidans meny ----------*/
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #C9D9DE;
+  color: black;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  display: block;
+  width: 100%;
+}
+
+.menu p {
+  background-color: #365059;
+  color: white;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  display: block;
+  width: 100%;
+}
+
+/*---------- Mittersta panelen ----------*/
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+/*---------- Högra panelen ----------*/
+.right {
+  background-color: #C9D9DE;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.right h2 {
+  background-color: #C9D9DE;
+}
+
+.right p {
+  background-color: #C9D9DE;
+}
+
+/*---------- Sidans footer ----------*/
 .footer {
     background-color:#365059;
     text-align:center;
@@ -74,6 +102,7 @@ img {
 
 /*Texten i footern, använder cascade för att göra den vit.*/
 .footer p {
+  background-color:#365059;
   color:white;
 }
 
@@ -85,5 +114,10 @@ img {
   width: 100%;
   /*Använder cascade för att göra den vit och ta bort understräck*/
   color: white;
+  background-color:#365059;
   text-decoration:none;
+}
+
+.footer img {
+  background-color:#365059;
 }

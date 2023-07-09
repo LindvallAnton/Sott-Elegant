@@ -55,10 +55,18 @@ img {
   margin-bottom: 7px;
   display: block;
   width: 100%;
+  transition-duration: 0.4s;
+}
+
+.menu a:hover {
+  background-color: #365059;
+  color: white;
 }
 
 .menu p {
   background-color: #365059;
+  opacity: 70%;
+  cursor:not-allowed;
   color: white;
   padding: 15px;
   margin-top: 7px;
@@ -76,6 +84,7 @@ img {
 
 /*---------- Högra panelen ----------*/
 .right {
+  transition-duration: 0.5s;
   background-color: #C9D9DE;
   float: left;
   width: 20%;
@@ -84,12 +93,20 @@ img {
   text-align: center;
 }
 
+.right:hover {
+  background-color: #365059;
+  color: white;
+}
+
 .right h2 {
-  background-color: #C9D9DE;
+  background-color: inherit;
+  color: inherit;
+  margin-bottom: 15px;
 }
 
 .right p {
-  background-color: #C9D9DE;
+  background-color: inherit;
+  color: inherit;
 }
 
 /*---------- Sidans footer ----------*/
@@ -100,7 +117,6 @@ img {
     margin-top:7px;
 }
 
-/*Texten i footern, använder cascade för att göra den vit.*/
 .footer p {
   background-color:#365059;
   color:white;
@@ -108,14 +124,18 @@ img {
 
 /* Instagram länken i footern */
 .footer a {
+  transition-duration: 0.4s;
   padding: 8px;
   margin-top: 7px;
   display: block;
   width: 100%;
-  /*Använder cascade för att göra den vit och ta bort understräck*/
   color: white;
   background-color:#365059;
   text-decoration:none;
+}
+
+.footer a:hover {
+color:black;
 }
 
 .footer img {

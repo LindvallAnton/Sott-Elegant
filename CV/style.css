@@ -17,16 +17,11 @@ h2 {
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
   height:auto;
 }
 
-/*Storleksanpassning för mobiler*/
-@media only screen and (max-width: 620px) {
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
+
 
 /*---------- Sidans top ----------*/
 .top {
@@ -127,4 +122,12 @@ color:black;
 
 .footer img {
   background-color:#365059;
+}
+
+
+/*Storleksanpassning för mobiler*/
+@media only screen and (max-width: 900px) {
+  .main, .right {
+   width: 100%;
+ }
 }

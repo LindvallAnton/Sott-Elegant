@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  background-color: #FDF9ED;
+  color: black;
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Times, serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: Times, serif;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+/*Storleksanpassning för mobiler*/
+@media only screen and (max-width: 620px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+/*---------- Sidans top ----------*/
+.top {
+    background-color:#2c1810;
+    padding:15px;
+    text-align:center;
+}
+
+.top h1 {
+  background-color: inherit;
+  color: white;
+}
+
+.top div {
+  background-color: inherit;
+}
+
+.navigation a {
+  background-color: #5b251d;
+  text-decoration: none;
+  color:white;
+  padding: 15px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  }
+
+.navigation a.enabled {
+  background-color: #C9D9DE;
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.navigation a.enabled:hover {
+  background-color: #5b251d;
+  color: white;
+}
+
+/*---------- Mittersta panelen ----------*/
+.main {
+  float: left;
+  width: 70%;
+  padding:20px;
+}
+
+/*---------- Högra panelen ----------*/
+.right {
+  background-color: #5b251d;
+  float: left;
+  width: 30%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  font-style: italic;
+}
+
+.right ul, li {
+  background-color: #5b251d;
+  color: inherit;
+  text-align: left;
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.right p {
+  background-color: inherit;
+  color: inherit;
+  font-size: 120%;
+}
+
+/*---------- Sidans footer ----------*/
+.footer {
+    background-color:#365059;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}
+
+.footer p {
+  background-color:#365059;
+  color:white;
+}
+
+/* Instagram länken i footern */
+.footer a {
+  transition-duration: 0.4s;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color:#365059;
+  text-decoration:none;
+}
+
+.footer a:hover {
+color:black;
+}
+
+.footer img {
+  background-color:#365059;
+}

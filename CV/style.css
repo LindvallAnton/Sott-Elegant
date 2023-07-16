@@ -6,6 +6,11 @@
   font-size: 16px;
 }
 
+.flex-box {
+  display:flex;
+  flex-wrap: wrap;
+}
+
 h1 {
   font-size: 40px;
   font-family: Times, serif;
@@ -61,16 +66,14 @@ img {
 
 /*---------- Mittersta panelen ----------*/
 .main {
-  float: left;
-  width: 70%;
+  flex: 2 2 70%;
   padding:20px;
 }
 
 /*---------- Högra panelen ----------*/
 .right {
   background-color: #5b251d;
-  float: left;
-  width: 30%;
+  flex: 1 1 30%;
   padding: 15px;
   margin-top: 7px;
   text-align: center;
@@ -124,10 +127,8 @@ color:black;
   background-color:#365059;
 }
 
-
-/*Storleksanpassning för mobiler*/
-@media only screen and (max-width: 900px) {
-  .main, .right {
-   width: 100%;
- }
+@media (max-width: 650px) {
+  .flex-box {
+    flex-direction: column;
+  }
 }

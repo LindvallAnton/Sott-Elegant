@@ -18,6 +18,7 @@ h2 {
 
 img {
   max-width:100%;
+  background-color: inherit;
   height:auto;
 }
 
@@ -30,9 +31,16 @@ img {
 
 /*---------- Sidans top ----------*/
 .top {
-    background-color:#365059;
-    padding:15px;
-    text-align:center;
+  background-color:#365059;
+  padding:15px;
+  text-align:center;
+}
+
+.top img {
+  width: auto;
+  height: 100px;
+  margin: 20px;
+
 }
 
 .top h1 {
@@ -55,10 +63,17 @@ img {
   margin-bottom: 7px;
   display: block;
   width: 100%;
-  transition-duration: 0.4s;
+  opacity: 70%;
+  text-decoration: none;
 }
 
-.menu a:hover {
+.menu a.enabled {
+  transition-duration: 0.4s;
+  opacity:1;
+  text-decoration: underline;
+}
+
+.menu a.enabled:hover {
   background-color: #365059;
   color: white;
 }
@@ -111,10 +126,13 @@ img {
 
 /*---------- Sidans footer ----------*/
 .footer {
-    background-color:#365059;
-    text-align:center;
-    padding:10px;
-    margin-top:7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#365059;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
 }
 
 .footer p {
@@ -124,9 +142,6 @@ img {
 
 /* Instagram länken i footern */
 .footer a {
-  transition-duration: 0.4s;
-  padding: 8px;
-  margin-top: 7px;
   display: block;
   width: 100%;
   color: white;
@@ -134,10 +149,23 @@ img {
   text-decoration:none;
 }
 
-.footer a:hover {
-color:black;
+.footer a.enabled {
+  transition-duration: 0.4s;
+}
+
+.footer a.enabled:hover {
+  color:black;
 }
 
 .footer img {
   background-color:#365059;
+}
+
+.icon {
+  position: relative;
+  margin-right: 7px;
+  bottom: -5px;
+  background-color:inherit;
+  width: 20px;
+  height: auto;
 }

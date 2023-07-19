@@ -4,22 +4,22 @@
     <!-- Metadata för encoding och scaling.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Om oss</title>
-
+    
     <!-- Sidans favicon -->
     <link rel="icon" type="image/x-icon" href="images/sott-och-elegant-favicon.png"/>
     <!-- länk till styling -->
     <link rel="stylesheet" href="../css/core.css">
 </head>
 <body>
-
+    
     <!-- Div:en för sidans header.-->
     <div class="top">
         <!-- Sött och elegant full scale logo som också fungerar som länk tillbaka till startsidan -->
         <a href="../index.html"><img src="../images/Sott-och-elegant-logo.png" alt="Sött och elegant"></a>
     </div>
-
+    
     <!-- Div:en för sidans huvudsakliga innehåll som beroende på sidans width antingen presenteras i en rad eller column.-->
     <div class="center">
         <div class="menu">
@@ -29,43 +29,66 @@
             <a href="#">Om oss</a>
             <a href="#" class="enabled">Kontakta oss</a>
         </div>
-
+        
         <div class="main">
+            <!-- Avsnitt för OM OSS -->
             <h2>Om oss</h2>
             <p>Vi är ditt hållbara val för en kopp njutning! Avnjuta ekologiskt odlade kaffebönor och smaka på vårt läckra utbud av hållbara och närproducerade delikatesser i vårt kafé på Drottningvägen 13 eller som catering.<br><br>Hos oss kan du slappna av i en mysig atmosfär och samtidigt veta att du bidrar till en grönare värld. Kom till Sött och Elegant idag och upplev en smakfull resa med omtanke om planeten!</p>
             <h2>Vårt team</h2>
+            <!-- Separat div för team porträtten -->
             <div id="team">
-                <div class="team-medlem">
-                    <h3>Cajsa<br>Warg</h3>
-                    <p>Grundare av Sött och Elegant. Cajsa har länge varit en disruptiv kraft och ett tungt namn i cafévärlden.</p>
+                <!-- En team-group innehåller två team-medlem:ar för se till att de alltid antingen är grupperade 4 på en rad eller 2x2 i en kolumn -->
+                <!-- team-group 1 -->
+                <div class="team-group">
+                    <!-- varje team-meldlem innehåller en bild överst sedan för och efternamn följt av en beskrivande text.-->
+                    <!-- team-medlem 1.1 -->
+                    <div class="team-medlem">
+                        <img src="../images/profil.png" class="profil" alt="Cajsa Warg">
+                        <h3>Cajsa<br>Warg</h3>
+                        <p>Grundare av Sött och Elegant. Cajsa har länge varit en disruptiv kraft och ett tungt namn i cafévärlden.</p>
+                    </div>
+                    <!-- team-medlem 1.2 -->
+                    <div class="team-medlem">
+                        <img src="../images/profil.png" class="profil" alt="Amir Hussain">
+                        <h3>Amir<br>Hussain</h3>
+                        <p>Med över 20 års erfarenhet av som bagare berikar Amir Sött och Elgegant med oskattbar kunskap utöver ett varmt leende och underbara bullar!</p>
+                    </div>
                 </div>
-                <div class="team-medlem">
-                    <h3>Amir<br>Hussain</h3>
-                    <p>Med över 20 års erfarenhet av som bagare berikar Amir Sött och Elgegant med oskattbar kunskap utöver ett varmt leende och underbara bullar!</p>
-                </div>
-                <div class="team-medlem">
-                    <h3>Mariam<br>Royna</h3>
-                    <p>Sött och Elegants egna tårtmästare som kan vispa ihop en bröllopstårta snabbare än vad du kan räkna till 36 baklänges.</p>
-                </div>
-                <div class="team-medlem">
-                    <h3>Anton<br>Lindvall</h3>
-                    <p>Webbutvecklar, grafisk formgivare och IT-avdelning i ett - Anton är en stor del av vad som får det att funka bakom kulisserna.</p>
+                <!-- Team-group nr.2 -->
+                <div class="team-group">
+                    <!-- team-medlem 2.1 -->
+                    <div class="team-medlem">
+                        <img src="../images/profil.png" class="profil" alt="Mariam Royna">
+                        <h3>Mariam<br>Royna</h3>
+                        <p>Sött och Elegants egna tårtmästare som kan vispa ihop en bröllopstårta snabbare än vad du kan räkna till 36 baklänges.</p>
+                    </div>
+                    <!-- team-medlem 2.2 -->
+                    <div class="team-medlem">
+                        <img src="../images/profil.png" class="profil" alt="Anton Lindvall">
+                        <h3>Anton<br>Lindvall</h3>
+                        <p>Webbutvecklar, grafisk formgivare och IT-avdelning i ett - Anton är en stor del av vad som får det att funka bakom kulisserna.</p>
+                    </div>
                 </div>
             </div>
-            <h2>Hållbarhet</h2>
-            <p></p>
-            <h2 id="student">Student-community</h2>
-            <p></p>
+            <!-- Avsnitt för erbjudanden till studenter -->
+            <h2 id="student">Studenter</h2>
+            <p>Sött och Elegnat är en samlingsplats för studenter och har sammarbeten med flera organisationer för att stärka våran community. Vi har gratis wi-fi, tysta vårer så väl som bord perfekta för gruppdisskusioner.<br>Genom vårt sammarbete med Mencenat erbjuder vi (mot upvisat Mencenat-kort):</p>
+            <ul>
+                <li>5% rabbat på alla varor.</li>
+                <li>En kopp kaffe, latte eller esspresso, per person per dag, för 35kr (Student rabbat gäller inte).</li>
+                <li>Gratis inträde till alla live-musik event.</li>
+            </ul>
+            <p>Missa inte bokklubben "Postkolonial feminism" på onsdagar från 16:30 till stängning.</p>
         </div>
-
+        
         <!-- Högra panelen med content. Hela diven är en länk till "lokal"-sidan. -->
         <a href="#"><div class="right">
             <h2>Caféet</h2>
-            <p>En tyst vrå i mitten av stan.<br/><br/>Kom och besök vårt rustika café på drottningvägen 13 och njut av en utsökt fika i en härlig miljö<br><br>Klicka <i>här</i> om du vill läsa mer om våra fantastiska lokal!</p>
+            <p>En tyst vrå i mitten av stan.<br/><br/>Kom och besök vårt rustika café på drottningvägen 13 och njut av en utsökt fika i en härlig miljö<br><br>Klicka <span>här</span> om du vill läsa mer om våra fantastiska lokal!</p>
             <img src="../images/cake.jpg" alt="nybryggd cappucino i en svart kopp">
         </div></a>
     </div>
-
+    
     <!-- Div:en för sidans footer.-->
     <div class="footer">
         <!-- Öppettider -->
@@ -79,6 +102,6 @@
         <!-- Copyright notice-->
         <p><img src="../images/copyright-outline.png" class="icon" alt="copyright icon">Anton Lindvall, 2023</p>
     </div>
-
+    
 </body>
 </html>

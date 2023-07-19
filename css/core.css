@@ -6,12 +6,6 @@
   font-size: 16px;
 }
 
-i {
-  background-color: inherit;
-  color:inherit;
-  text-decoration: underline;
-}
-
 h1 {
   font-size: 40px;
   font-family: Times, serif;    
@@ -27,13 +21,23 @@ p {
   background-color: inherit;
 }
 
+p span {
+  background-color: inherit;
+  color:inherit;
+  text-decoration: underline;
+}
+
+ul, li {
+  background-color: inherit;
+}
+
 img {
   max-width:100%;
   background-color: inherit;
   height:auto;
 }
 
-.icon {
+img.icon {
   position: relative;
   margin-right: 7px;
   bottom: -5px;
@@ -42,8 +46,12 @@ img {
   height: auto;
 }
 
+img.profil {
+  padding:7px;
+}
+
 /*---------- Sidans top ----------*/
-.top {
+.top, .top h1 {
   background-color:#365059;
   padding:15px;
   text-align:center;
@@ -54,11 +62,6 @@ img {
   width:auto;
   margin: 20px;
   
-}
-
-.top h1 {
-  background-color: #365059;
-  color: white;
 }
 
 /*---------- div som innehåller meny, main och right ----------*/
@@ -99,18 +102,6 @@ img {
   color: white;
 }
 
-.menu p {
-  background-color: #365059;
-  opacity: 70%;
-  cursor:not-allowed;
-  color: white;
-  padding: 15px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  display: block;
-  width: 100%;
-}
-
 /*---------- Mittersta panelen ----------*/
 .main {
   background-color: inherit;
@@ -121,21 +112,35 @@ img {
 
 div#team {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: inherit;
+}
+
+div.team-group {
+  display:flex;
   flex-direction: row;
+justify-content: center;
   background-color: inherit;
 }
 
 div.team-medlem {
-  background-color: inherit;
+  margin: 14px;
+  padding:14px;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #365059;
+  color: white;
   text-align: center;
-  
 }
 
 .team-medlem h3 {
+  color: inherit;
   background-color: inherit;
 }
 
 .team-medlem p {
+  color: inherit;
   background-color: inherit;
 }
 
@@ -177,7 +182,7 @@ div.team-medlem {
   margin-top:7px;
 }
 
-.footer p {
+.footer p, .footer img {
   background-color:#365059;
   color:white;
 }
@@ -197,16 +202,9 @@ div.team-medlem {
   color:black;
 }
 
-.footer img {
-  background-color:#365059;
-}
-
 /*Storleksanpassning för mobiler*/
 @media only screen and (max-width: 800px) {
   .menu, .main, .right {
     width: 100%;
-  }
-  div#team {
-    flex-direction: column;
   }
 }

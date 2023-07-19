@@ -34,37 +34,50 @@
             <h2>Kontakt</h2>
             <p>Gör din nästa tillställning till ett minne att begrunda i ditt hjärta med catering från vårt fantastiska sortiment på Sött och Elegant. Vi erbjuder en unik caterinupplevelse anpassad för just dig.<br> Vi tar hand om allt från små möten till stora evenemang och skräddarsyr våra cateringtjänster efter dina behov. Våra kunniga och vänliga personal ser till att varje detalj är perfekt, från presentationen till smaken.<br><br> Vi strävar efter att vara så hållbara som möjligt genom att välja ekologiska och lokalt producerade ingredienser samt använda miljövänliga förpackningar. Lita på oss för att skapa en smakupplevelse utöver det vanliga, där varje tugga är en njutning. <br><br><span>Kontakta oss</span> idag för att diskutera dina cateringbehov och låt oss göra din nästa tillställning till en succé.</p>
             <!-- En separat div för kontakt formuläret och en paragraf för att scaling ska bli som jag vill ha den. -->
-            <div class="flex-box-contact">
-                <div class="form-contact">
-                    <form action="http://www.sott-elegant.se/kontakt-form" method="post">
-                        <fieldset>
-                            <legend>Kontakta oss:</legend>
-                            <div>
-                                <!-- Namn -->
-                                <label for="namn">Namn:</label><br>
-                                <input type="text" id="namn" size="30"><br>
-                            </div>
-                            <div>
-                                <!-- Mejladress -->
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" size="30"><br>
-                            </div>
-                            <div>
-                                <!-- Telefonnummer -->
-                                <label for="telefonnummer">Telefonnummer:</label><br>
-                                <input type="text" id="telefonnummer" Size="30"><br>
-                            </div>
-                            <div>
-                                <!-- Meddelande -->
-                                <label for="meddelande">Meddelande:</label><br>
-                                <textarea id="meddelande" cols="30" rows="5">Skriv ditt meddelande...</textarea><br>
-                            </div>
-                            <!-- Skicka Btn. -->
-                            <button>Skicka</button>
-                        </fieldset>
-                    </form>
-                </div> <!-- slut på form-box div. -->
-            </div> <!-- Slut på flex-box div. -->
+            <div class="form-container">
+                <form action="/action_page.php">
+                    <div class="form-row">
+                        <div class="small-column">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="large-column">
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="small-column">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="large-column">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="small-column">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="large-column">
+                            <select id="country" name="country">
+                                <option value="catering">Catering</option>
+                                <option value="question">Fråga</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="small-column">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="large-column">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div><!-- Slut på main div. -->
         
         <!-- Högra panelen med content. Hela diven är en länk till "studenterbjudanden" på "Om oss"-sidan. -->
@@ -77,10 +90,6 @@
                 <figcaption>Foto: Haley Black, 2019</figcaption>
             </figure>
         </div></a>
-        
-        
-        
-        
     </div>
     
     <!-- Div:en för sidans footer.-->

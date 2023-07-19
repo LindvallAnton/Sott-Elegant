@@ -4,22 +4,22 @@
     <!-- Metadata för encoding och scaling.-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Startsida</title>
-
+    
     <!-- Sidans favicon -->
     <link rel="icon" type="image/x-icon" href="../images/sott-och-elegant-favicon.png"/>
     <!-- länk till styling -->
     <link rel="stylesheet" href="../css/core.css">
 </head>
 <body>
-
+    
     <!-- Div:en för sidans header.-->
     <div class="top">
         <!-- Sött och elegant full scale logo som också fungerar som länk tillbaka till startsidan -->
         <a href="../index.html"><img src="../images/Sott-och-elegant-logo.png" alt="Sött och elegant"></a>
     </div>
-
+    
     <!-- Div:en för sidans huvudsakliga innehåll som beroende på sidans width antingen presenteras i en rad eller column.-->
     <div class="center">
         <div class="menu">
@@ -29,20 +29,60 @@
             <a href="../about/index.html" class="enabled">Om oss</a>
             <a href="#">Kontakta oss</a>
         </div>
-
+        
         <div class="main">
-            <h2>kontakt</h2>
+            <h2>Kontakt</h2>
             <p>Gör din nästa tillställning till ett minne att begrunda i ditt hjärta med catering från vårt fantastiska sortiment på Sött och Elegant. Vi erbjuder en unik caterinupplevelse anpassad för just dig.<br> Vi tar hand om allt från små möten till stora evenemang och skräddarsyr våra cateringtjänster efter dina behov. Våra kunniga och vänliga personal ser till att varje detalj är perfekt, från presentationen till smaken.<br><br> Vi strävar efter att vara så hållbara som möjligt genom att välja ekologiska och lokalt producerade ingredienser samt använda miljövänliga förpackningar. Lita på oss för att skapa en smakupplevelse utöver det vanliga, där varje tugga är en njutning. <br><br><span>Kontakta oss</span> idag för att diskutera dina cateringbehov och låt oss göra din nästa tillställning till en succé.</p>
-        </div>
-
-          <!-- Högra panelen med content. Hela diven är en länk till "studenterbjudanden" på "Om oss"-sidan. -->
-        <a href="../about/index.html#team"><div class="right">
-            <h2>Vårt Team</h2>
-            <p>Träffa Sött och Elegant.<br><br>Klicka <span>här</span> om du vill läsa mer om våra teammedlemmar!</p>
-            <img src="../images/strawberry-cake.jpg" alt="liten jordgubbstårta">
+            <!-- En separat div för kontakt formuläret och en paragraf för att scaling ska bli som jag vill ha den. -->
+            <div class="flex-box-contact">
+                <div class="form-contact">
+                    <form action="http://www.sott-elegant.se/kontakt-form" method="post">
+                        <fieldset>
+                            <legend>Kontakta oss:</legend>
+                            <div>
+                                <!-- Namn -->
+                                <label for="namn">Namn:</label><br>
+                                <input type="text" id="namn" size="30"><br>
+                            </div>
+                            <div>
+                                <!-- Mejladress -->
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" size="30"><br>
+                            </div>
+                            <div>
+                                <!-- Telefonnummer -->
+                                <label for="telefonnummer">Telefonnummer:</label><br>
+                                <input type="text" id="telefonnummer" Size="30"><br>
+                            </div>
+                            <div>
+                                <!-- Meddelande -->
+                                <label for="meddelande">Meddelande:</label><br>
+                                <textarea id="meddelande" cols="30" rows="5">Skriv ditt meddelande...</textarea><br>
+                            </div>
+                            <!-- Skicka Btn. -->
+                            <button>Skicka</button>
+                        </fieldset>
+                    </form>
+                </div> <!-- slut på form-box div. -->
+            </div> <!-- Slut på flex-box div. -->
+        </div><!-- Slut på main div. -->
+        
+        <!-- Högra panelen med content. Hela diven är en länk till "studenterbjudanden" på "Om oss"-sidan. -->
+        <a href="../location/index.html"><div class="right">
+            <h2>På plats</h2>
+            <p>Kom gärna och säg hej!<br/><br/>Om du har vill planera catering, veta mer om Sött och Elegant eller av någon annan anledning komma i kontakt med oss så är du självklart varmt välkommen att besök vårt rustika café på drottningvägen 13. Vi har öppet mån-fr 10-18 och lö-sö 14-20.<br><br>Klicka <span>här</span> om du vill läsa mer om våra fantastiska lokal!</p>
+            <!-- Skapar en figure för att kunna sätta en snygg caption med information om fotografen under bilden. -->
+            <figure>
+                <img src="../images/drottningvagen.jpg" alt="Två bord i ett mysigt café med stora fönster">
+                <figcaption>Foto: Haley Black, 2019</figcaption>
+            </figure>
         </div></a>
+        
+        
+        
+        
     </div>
-
+    
     <!-- Div:en för sidans footer.-->
     <div class="footer">
         <!-- Öppettider -->
@@ -56,6 +96,6 @@
         <!-- Copyright notice-->
         <p><img src="../images/copyright-outline.png" class="icon" alt="copyright icon">Anton Lindvall, 2023</p>
     </div>
-
+    
 </body>
 </html>

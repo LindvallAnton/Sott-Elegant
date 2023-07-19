@@ -18,7 +18,7 @@ h2 {
   text-align: center;
 }
 
-p, ul, li {
+p, ul, li, form, fieldset, legend, label, .form-contact div {
   background-color: inherit;
 }
 
@@ -119,13 +119,15 @@ figure, figcaption, figcaption a {
   color: white;
 }
 
-/*---------- Mittersta panelen ----------*/
+/*---------- Mittersta panelen standard ----------*/
 .main {
   background-color: inherit;
   float: left;
   width: 60%;
   padding: 7px 20px;
 }
+
+/*---------- team uppställningen på om oss sidans mittersta panel ----------*/
 
 div#team, div.team-group {
   display: flex;
@@ -148,6 +150,34 @@ div.team-medlem {
   color: inherit;
   background-color: inherit;
 }
+
+
+/*---------- Kontakt formuläret på kontakta oss sidans mittersta panel----------*/
+.flex-box-contact {
+  background-color: inherit;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contact {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background-color: #C9D9DE;
+  color: #C9D9DE;
+  padding:14px;
+  flex: 0 0 auto;
+}
+
+.form-contact button, input, textarea {
+background-color: #FDF9ED;
+}
+
+textarea {
+  max-width: 100%;
+}
+
 
 /*---------- Högra panelen ----------*/
 .right {

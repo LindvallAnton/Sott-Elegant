@@ -151,33 +151,63 @@ div.team-medlem {
   background-color: inherit;
 }
 
+/*---------- formulär på kontakta oss sidan ----------*/
 
-/*---------- Kontakt formuläret på kontakta oss sidans mittersta panel----------*/
-.flex-box-contact {
-  background-color: inherit;
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-contact {
-  margin-top: 14px;
-  margin-bottom: 14px;
+.form-container {
+  box-sizing: border-box;
+  border-radius: 5px;
   background-color: #C9D9DE;
-  color: #C9D9DE;
-  padding:14px;
-  flex: 0 0 auto;
+  padding: 20px;
 }
 
-.form-contact button, input, textarea {
-background-color: #FDF9ED;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #FDF9ED;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-textarea {
-  max-width: 100%;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
+input[type=submit] {
+  background-color: #FDF9ED;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transition-duration: 0.3s;
+}
+
+input[type=submit]:hover {
+  background-color: #365059;
+  color:white
+}
+
+.small-row {
+  background-color: inherit;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.large-row {
+  background-color: inherit;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.form-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*---------- Högra panelen ----------*/
 .right {
@@ -200,6 +230,7 @@ textarea {
   color: inherit;
   margin-bottom: 15px;
 }
+
 
 /*---------- Sidans footer ----------*/
 .footer {
@@ -236,5 +267,10 @@ textarea {
 @media only screen and (max-width: 800px) {
   .menu, .main, .right {
     width: 100%;
+    margin-top: 0;
+  }
+  .small-row, .large-row, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }

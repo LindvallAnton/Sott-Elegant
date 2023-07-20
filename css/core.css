@@ -18,7 +18,7 @@ h2 {
   text-align: center;
 }
 
-p, ul, li, form, fieldset, legend, label, .form-contact div {
+p, ul, li {
   background-color: inherit;
 }
 
@@ -152,7 +152,6 @@ div.team-medlem {
 }
 
 /*---------- formulär på kontakta oss sidan ----------*/
-
 .form-container {
   box-sizing: border-box;
   border-radius: 5px;
@@ -189,14 +188,14 @@ input[type=submit]:hover {
   color:white
 }
 
-.small-row {
+.main .small-row {
   background-color: inherit;
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
-.large-row {
+.main .large-row {
   background-color: inherit;
   float: left;
   width: 75%;
@@ -265,11 +264,7 @@ input[type=submit]:hover {
 
 /*Storleksanpassning för mobiler*/
 @media only screen and (max-width: 800px) {
-  .menu, .main, .right {
-    width: 100%;
-    margin-top: 0;
-  }
-  .small-row, .large-row, input[type=submit] {
+  .menu, .main, .right, .small-row, .large-row, input[type=submit]{
     width: 100%;
     margin-top: 0;
   }

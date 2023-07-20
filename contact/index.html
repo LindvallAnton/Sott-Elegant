@@ -32,53 +32,33 @@
         
         <div class="main">
             <h2>Kontakt</h2>
-            <p>Gör din nästa tillställning till ett minne att begrunda i ditt hjärta med catering från vårt fantastiska sortiment på Sött och Elegant. Vi erbjuder en unik caterinupplevelse anpassad för just dig.<br> Vi tar hand om allt från små möten till stora evenemang och skräddarsyr våra cateringtjänster efter dina behov. Våra kunniga och vänliga personal ser till att varje detalj är perfekt, från presentationen till smaken.<br><br> Vi strävar efter att vara så hållbara som möjligt genom att välja ekologiska och lokalt producerade ingredienser samt använda miljövänliga förpackningar. Lita på oss för att skapa en smakupplevelse utöver det vanliga, där varje tugga är en njutning. <br><br><span>Kontakta oss</span> idag för att diskutera dina cateringbehov och låt oss göra din nästa tillställning till en succé.</p>
-            <!-- En separat div för kontakt formuläret och en paragraf för att scaling ska bli som jag vill ha den. -->
-            <div class="form-container">
+            <p>Har du någon fråga, vill veta mer om Sött och Elegant, våran hållbarhetspolicy, vill ge oss feedback eller vill lägga en beställnign för catering så kontakta oss gärna på telefon <span><a href="tel:+46123456789">+46 12 345 67 89</a></span>, mejl <span><a href="mailto:info@sottoelegant.se" class="enabled">info@sottoelegant.se</a></span> eller via kontaktformuläret nedan!<br><br>Du är varmt välkommen att ta din fråga över en kopp nybryggt ekologiskt kaffe på vårt café på <span><a href="../location/index.html">Drottningvägen 13</a></span> är öppet och alltid bemannat av vår vänliga och pratglada personal, må-fr 10-18 och lö-sö 14-20.</p>
+            
+            <!-- Kontaktformulär -->
+            <div class="contact-form">
                 <form action="/action_page.php">
-                    <div class="form-row">
-                        <div class="small-column">
-                            <label for="fname">Förnamn</label>
-                        </div>
-                        <div class="large-column">
-                            <input type="text" id="fname" name="firstname" placeholder="Skriv här..">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="small-column">
-                            <label for="lname">Efternamn</label>
-                        </div>
-                        <div class="large-column">
-                            <input type="text" id="lname" name="lastname" placeholder="Skriv här..">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="small-column">
-                            <label for="query">Ämne</label>
-                        </div>
-                        <div class="large-column">
-                            <select id="query" name="query">
-                                <option value="catering">Catering</option>
-                                <option value="question">Fråga</option>
-                                <option value="feedback">Feedback</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="small-column">
-                            <label for="message">Meddelande</label>
-                        </div>
-                        <div class="large-column">
-                            <textarea id="message" name="message" placeholder="Skriv här.." style="height:200px"></textarea>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="form-row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-        </div><!-- Slut på main div. -->
+                    <label for="fname">Förnamn</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Skriv här..">
+                
+                    <label for="lname">Efternamn</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Skriv här..">
+                
+                    <label for="query">Ämne</label>
+                    <select id="query" name="query">
+                      <option value="order">Beställning</option>
+                      <option value="feedback">Feedback</option>
+                      <option value="question">Fråga</option>
+                    </select>
+                
+                    <label for="message">Meddelande</label>
+                    <textarea id="message" name="message" placeholder="Skriv här.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Skicka">
+                  </form>
+            </div><!-- Slut på contact-form-->
+
+            <p> Vi återkommmer så fort som möjligt!</p>
+        </div><!-- Slut på main -->
         
         <!-- Högra panelen med content. Hela diven är en länk till "studenterbjudanden" på "Om oss"-sidan. -->
         <a href="../location/index.html"><div class="right">

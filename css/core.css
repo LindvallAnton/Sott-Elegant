@@ -18,7 +18,7 @@ h2 {
   text-align: center;
 }
 
-p, ul, li {
+p, ul, li, a {
   background-color: inherit;
 }
 
@@ -139,7 +139,7 @@ div#team, div.team-group {
 div.team-medlem {
   margin: 14px;
   padding:14px;
-  min-width: 200px;
+  min-width: 150px;
   max-width: 300px;
   background-color: #365059;
   color: white;
@@ -152,60 +152,42 @@ div.team-medlem {
 }
 
 /*---------- formulär på kontakta oss sidan ----------*/
-.form-container {
-  box-sizing: border-box;
-  border-radius: 5px;
-  background-color: #C9D9DE;
-  padding: 20px;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #FDF9ED;
   border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
   resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+  background-color: #FDF9ED;
 }
 
 input[type=submit] {
+  align-self:right;
   background-color: #FDF9ED;
   color: black;
   padding: 12px 20px;
-  border: none;
+  border: solid #365059;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
-  transition-duration: 0.3s;
+  transition-duration: 0.4s;
 }
 
 input[type=submit]:hover {
   background-color: #365059;
-  color:white
+  color:white;
 }
 
-.main .small-row {
-  background-color: inherit;
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+.contact-form {
+  border-radius: 5px;
+  background-color: #C9D9DE;
+  padding: 20px;
 }
 
-.main .large-row {
-  background-color: inherit;
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-.form-row::after {
-  content: "";
-  display: table;
-  clear: both;
+.contact-form form, .contact-form label {
+  background-color: #C9D9DE;
 }
 
 /*---------- Högra panelen ----------*/
@@ -264,7 +246,7 @@ input[type=submit]:hover {
 
 /*Storleksanpassning för mobiler*/
 @media only screen and (max-width: 800px) {
-  .menu, .main, .right, .small-row, .large-row, input[type=submit]{
+  .menu, .main, .right, .contact-form input[type=submit]{
     width: 100%;
     margin-top: 0;
   }

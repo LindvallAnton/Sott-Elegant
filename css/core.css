@@ -66,7 +66,6 @@ img.profil {
   height:100px;
   width:auto;
   margin: 20px;
-  
 }
 
 /*---------- div som innehåller meny, main och right ----------*/
@@ -86,7 +85,6 @@ figure, figcaption, figcaption a {
   color:inherit;
   background-color: inherit;
 }
-
 
 /*---------- Sidans meny ----------*/
 .menu {
@@ -210,7 +208,6 @@ input[type=submit]:hover {
   color: inherit;
   margin-bottom: 15px;
 }
-
 
 /*---------- Sidans footer ----------*/
 .footer {

@@ -150,7 +150,7 @@ div.team-medlem {
 }
 
 /*---------- formulär på kontakta oss sidan ----------*/
-input[type=text], select, textarea {
+input[type=text] input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #FDF9ED;
@@ -229,7 +229,7 @@ input[type=submit]:hover {
   width: 100%;
   color: white;
   background-color:#365059;
-  text-decoration:none;
+  text-decoration:underline;
 }
 
 .footer a.enabled {
@@ -237,7 +237,7 @@ input[type=submit]:hover {
 }
 
 .footer a.enabled:hover {
-  color:black;
+  color: #C9D9DE;
 }
 
 /*Storleksanpassning för mobiler*/

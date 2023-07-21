@@ -150,7 +150,7 @@ div.team-medlem {
 }
 
 /*---------- formulär på kontakta oss sidan ----------*/
-input[type=text] input[type=email], select, textarea {
+input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #FDF9ED;
